@@ -23,13 +23,13 @@ document.body.appendChild(renderer.domElement);
 
 // Added cube 1
 var geometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+var material = new THREE.MeshBasicMaterial({ color: 0xffffff });
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 // wireframe - new way
 var geo = new THREE.EdgesGeometry(cube.geometry); // or WireframeGeometry
-var mat = new THREE.LineBasicMaterial({ color: 0xffffff, linewidth: 5 });
+var mat = new THREE.LineBasicMaterial({ color: 0x333333, linewidth: 2 });
 var wireframe = new THREE.LineSegments(geo, mat);
 cube.add(wireframe);
 
@@ -37,7 +37,7 @@ cube.add(wireframe);
 var geometry1 = new THREE.BoxGeometry(1, 1, 1);
 var material1 = new THREE.MeshBasicMaterial({
   wireframe: true,
-  color: 0xcccccc
+  color: 0xffffff
 });
 var cube1 = new THREE.Mesh(geometry1, material1);
 scene.add(cube1);
