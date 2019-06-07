@@ -47,8 +47,8 @@ function renderCube(ID) {
 
   const animate = function() {
     requestAnimationFrame(animate);
-    cube.rotation.x += 0.03; // Rotate cube clock wise in X direction
-    cube.rotation.y += 0.03; // Rotate cube clock wise in Y direction
+    cube.rotation.x += 0.02; // Rotate cube clock wise in X direction
+    cube.rotation.y += 0.02; // Rotate cube clock wise in Y direction
     cube1.rotation.x -= 0.06;
     cube1.rotation.y -= 0.06; // Rotate cube anti clock wise in y direction
     renderer.render(scene, camera);
